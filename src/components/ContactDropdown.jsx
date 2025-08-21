@@ -116,7 +116,7 @@ const ContactContent = ({ isScrolled }) => (
       />
       WhatsApp
     </a>
-    <h4 className="font-semibold mb-2">Contact us</h4>
+    <h4 className="font-semibold mb-2">Find us</h4>
     {/* View Map */}
     <a
       href="https://maps.app.goo.gl/LJt5u1AKGcJxuX7W9"

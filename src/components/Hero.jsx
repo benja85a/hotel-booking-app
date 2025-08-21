@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { assets, recursos } from "../assets/assets";
+import { assets, recursos } from "../assets/assets.js";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {

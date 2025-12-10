@@ -52,6 +52,7 @@ const ExclusiveOffers = () => {
                 className="invert group-hover:translate-x-1 transition-all"
                 src={assets.arrowIcon}
                 alt="arrow-icon"
+                
               />
             </button>
           </div>

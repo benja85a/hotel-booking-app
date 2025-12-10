@@ -20,7 +20,7 @@ export default function StickyTextScrollImages() {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
 
     items.forEach((el) => io.observe(el));
@@ -31,7 +31,7 @@ export default function StickyTextScrollImages() {
     <section className="bg-slate-950 text-white">
       <div className="grid md:grid-cols-2">
         {/* TEXTO STICKY solo en desktop */}
-        <div className="hidden md:flex sticky top-0 h-screen items-center justify-center p-8 z-10">
+        <div className="hidden md:flex sticky top-0 h-[90vh] items-center justify-center p-8 z-10">
           <div className="max-w-md">
             <h2 className="text-5xl md:text-6xl font-semibold tracking-tight leading-tight">
               these are the areas you can use

@@ -40,12 +40,12 @@ import commonArea2 from "./commonArea2.jpg";
 import commonArea3 from "./commonArea3.jpg";
 import commonArea4 from "./commonArea4.jpg";
 import commonArea5 from "./commonArea5.jpg";
-import vestibulo from "./vestibulo.jpg"
-import vestibulo2 from "./vestibulo2.jpg"
-import vestibulo3 from "./vestibulo3.jpg"
-import zonaRosa from "./zonaRosa.png"
-import desayunos from "./desayunos.jpg"
-import areasComunes from "./areasComunes.jpg"
+import vestibulo from "./vestibulo.jpg";
+import vestibulo2 from "./vestibulo2.jpg";
+import vestibulo3 from "./vestibulo3.jpg";
+import zonaRosa from "./zonaRosa.png";
+import desayunos from "./desayunos.jpg";
+import areasComunes from "./areasComunes.jpg";
 import addIcon from "./addIcon.svg";
 import dashboardIcon from "./dashboardIcon.svg";
 import listIcon from "./listIcon.svg";
@@ -60,7 +60,7 @@ export const recursos = {
   vestibulo,
   vestibulo2,
   vestibulo3,
-}
+};
 export const assets = {
   logo,
   logoVillaMadero,
@@ -134,29 +134,29 @@ export const commonAreas = [
   {
     id: 1,
     name: "Common Areas",
-    image: commonArea1
+    image: commonArea1,
   },
   {
     id: 2,
     name: "Rooftop Terrace",
-    image: commonArea2
+    image: commonArea2,
   },
   {
     id: 3,
     name: "breakfast area",
-    image: commonArea3
+    image: commonArea3,
   },
   {
     id: 4,
     name: "breakfast area",
-    image: commonArea4
+    image: commonArea4,
   },
   {
     id: 5,
     name: "white living room",
-    image: commonArea5
+    image: commonArea5,
   },
-]
+];
 
 export const experienceSteps = [
   {
@@ -190,7 +190,6 @@ export const experienceSteps = [
     image: areasComunes,
   },
 ];
-
 
 // Testimonials Dummy Data
 export const testimonials = [
@@ -287,6 +286,7 @@ export const facilityIcons = {
   "Garden View": assets.locationFilledIcon,
   "private Bathroom": assets.badgeIcon,
   "double Bed accomodation": assets.starIconFilled,
+  "Closet": assets.arrowIcon,
 };
 
 // For Room Details Page
@@ -340,65 +340,154 @@ export const hotelDummyData = {
   __v: 0,
 };
 
+export const stayInfo = [
+  {
+    title: "Clean & Safe Stay",
+    icon: "badgeIcon", 
+    description: "A well-maintained and hygienic space just for you.",
+  },
+  {
+    title: "Enhanced Cleaning",
+    icon: "starIconFilled",
+    description: "This host follows Staybnb's strict cleaning standards.",
+  },
+  {
+    title: "Excellent Location",
+    icon: "locationFilledIcon",
+    description: "90% of guests rated the location 5 stars.",
+  },
+  {
+    title: "Smooth Check-In",
+    icon: "calenderIcon",
+    description: "100% of guests gave check-in a 5-star rating.",
+  },
+];
+
+
+
 // Rooms Dummy Data
 export const roomsDummyData = [
   {
     _id: "67f7647c197ac559e4089b96",
     hotel: hotelDummyData,
     roomType: "executive room",
+    codeName: "veraneras",
     pricePerNight: 58,
     amenities: ["Air Conditioner", "Garden View", "private Bathroom"],
-    images: [executiveRoom /* , roomImg2, roomImg3, roomImg4 */],
+    images: [executiveRoom, roomImg2, roomImg3, roomImg4],
     isAvailable: true,
     createdAt: "2025-04-10T06:26:04.013Z",
     updatedAt: "2025-04-10T06:26:04.013Z",
     __v: 0,
+    formId: "9deb9e332a05301c",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
   },
   {
     _id: "67f76452197ac559e4089b8e",
     hotel: hotelDummyData,
     roomType: "Double Basic Room",
-    pricePerNight: 63,
+    codeName: "nogal",
+    pricePerNight: 53,
     amenities: [
-      "Double bed accomodation",
+      "double Bed accomodation",
       "Garden View",
       "Air Conditioner",
       "private Bathroom",
     ],
-    images: [double_basic_room /* , roomImg3, roomImg4, roomImg1 */],
+    images: [double_basic_room, roomImg3, roomImg4, roomImg1],
     isAvailable: true,
     createdAt: "2025-04-10T06:25:22.593Z",
     updatedAt: "2025-04-10T06:25:22.593Z",
     __v: 0,
+    formId: "966bf5a54fff0299",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
   },
   {
     _id: "67f76406197ac559e4089b82",
     hotel: hotelDummyData,
     roomType: "Urbana Suite Room",
-    pricePerNight: 73,
+    codeName: "San Andres",
+    pricePerNight: 65,
     amenities: [
       "Free WiFi",
       "Free Breakfast",
       "Air Conditioner",
       "private Bathroom",
     ],
-    images: [urbana_suite],
+    images: [urbana_suite, roomImg2, roomImg3, roomImg4],
     isAvailable: true,
     createdAt: "2025-04-10T06:24:06.285Z",
     updatedAt: "2025-04-10T06:24:06.285Z",
     __v: 0,
+    formId: "acbfc13408b1083b",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
   },
   {
     _id: "67f763d8197ac559e4089b7a",
     hotel: hotelDummyData,
-    roomType: "Single Bed",
-    pricePerNight: 199,
+    roomType: "Basic Double Room",
+    codeName: "olivo",
+    pricePerNight: 43,
     amenities: ["Free WiFi", "Room Service", "Pool Access"],
     images: [roomImg4, roomImg1, roomImg2, roomImg3],
     isAvailable: true,
     createdAt: "2025-04-10T06:23:20.252Z",
     updatedAt: "2025-04-10T06:23:20.252Z",
     __v: 0,
+    formId: "b844e932a9f13ba9",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
+  },
+  {
+    _id: "67f763b0197ac559e4089b70",
+    hotel: hotelDummyData,
+    roomType: "Junior Room",
+    codeName: "Bambu",
+    pricePerNight: 30,
+    amenities: ["Free WiFi", "Room Service", "Pool Access"],
+    images: [roomImg4, roomImg1, roomImg2, roomImg3],
+    isAvailable: true,
+    createdAt: "2025-04-10T06:23:20.252Z",
+    updatedAt: "2025-04-10T06:23:20.252Z",
+    __v: 0,
+    formId: "8803cf0af038abb1",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
+  },
+  {
+    _id: "67f7639b197ac559e4089b68",
+    hotel: hotelDummyData,
+    roomType: "Superior Room",
+    codeName: "Maquilishuat",
+    pricePerNight: 58,
+    amenities: ["Free WiFi", "Room Service", "Pool Access"],
+    images: [roomImg4, roomImg1, roomImg2, roomImg3],
+    isAvailable: true,
+    createdAt: "2025-04-10T06:23:20.252Z",
+    updatedAt: "2025-04-10T06:23:20.252Z",
+    __v: 0,
+    formId: "b8fc83995c083389",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
+  },
+  {
+    _id: "67f7637f197ac559e4089b60",
+    hotel: hotelDummyData,
+    roomType: "Economy single Room",
+    codeName: "Gardenias",
+    pricePerNight: 28,
+    amenities: ["Free WiFi", "Room Service", "Closet"],
+    images: [roomImg4, roomImg1, roomImg2, roomImg3],
+    isAvailable: true,
+    createdAt: "2025-04-10T06:23:20.252Z",
+    updatedAt: "2025-04-10T06:23:20.252Z",
+    __v: 0,
+    formId: "af7bd9d68df2234d",
+    address: "San Salvador, El Salvador",
+    cities: "Colonia San Benito",
   },
 ];
 
